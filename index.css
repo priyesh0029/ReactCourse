@@ -1,0 +1,94 @@
+.logo{
+    width: 100px;
+}
+
+.header{
+    display: flex;
+    border: solid black 1px;
+    margin: 10px;
+    background-color: rgb(234, 241, 241);
+}
+
+.nav-item > ul{
+    list-style-type: none;
+    display: flex;
+    margin-left: 30em;
+    text-decoration: none;
+}
+.nav-item > ul > li{
+    padding: 10px;
+    font-size: 25px;
+
+}
+.card{
+    width: 20em; 
+    min-height: 28em;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 11px;
+}
+.card > img{
+    width: 100%;
+}
+
+.resturant-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Link{
+    text-decoration: none;
+    color: black;
+}
+.search-container{
+    display: flex;
+    margin: 5em;
+    margin-left: 30em;
+}
+.search-bar{
+     width: 30em;
+     height: 2em;
+}
+.search-btn{
+    width: 8em;
+    margin-left: 5px;
+}
+.shimmer{
+    width : 15em;
+    height: 15em;
+    padding: 1em;
+    margin: 11px;
+    background-color: lightgrey;
+}
+.foodList{
+    display : flex;
+    flex-flow: column;
+    align-items: center;
+}
+.foodMenu{
+    display: flex;
+    width : 60em;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 11px;
+}
+.foodListView{
+    display: flex;
+    justify-content: center;
+}
+.foodImage{
+    width: 50%;
+    height: 15em;
+}
+.foodDetails{
+    margin-left: 5em;
+}
+.ResturantDetails{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width : 60em;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 11px;
+    line-height: 1px;
+}

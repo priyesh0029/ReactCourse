@@ -1,0 +1,33 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "to learn React",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priyesh0029/ReactCourse.git"
+  },
+  "author": "Priyesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyesh0029/ReactCourse/issues"
+  },
+  "homepage": "https://github.com/priyesh0029/ReactCourse#readme",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "process": "^0.11.10"
+  }
+}
