@@ -19,15 +19,21 @@
   "homepage": "https://github.com/priyesh0029/ReactCourse#readme",
   "dependencies": {
     "-": "^0.0.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
     "D": "^1.0.0",
-    "parcel": "^2.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.1.0",
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "babel-plugin-transform-remove-console": "^6.9.4",
-    "process": "^0.11.10"
+    "buffer": "^5.7.1",
+    "parcel": "^2.9.2",
+    "postcss": "^8.4.24",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
   }
 }
