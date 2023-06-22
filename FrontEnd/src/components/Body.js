@@ -18,10 +18,10 @@ const Body = () => {
   useEffect(() => {
     axios
       .get(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=8.555132&lng=76.876666&page_type=DESKTOP_WEB_LISTING"
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.9204134&lng=76.25660169999999&page_type=DESKTOP_WEB_LISTING"
       )
       .then((response) => {
-        console.log(response?.data?.data?.cards[2]?.data?.data?.cards);
+        // console.log(response);
         setAllResturants(response?.data?.data?.cards[2]?.data?.data?.cards);
         setFilterRestaurants(response?.data?.data?.cards[2]?.data?.data?.cards);
       });
@@ -92,6 +92,6 @@ const Body = () => {
       </div>
     </>
   );
-};
+ };
 
 export default Body;

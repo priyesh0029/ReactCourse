@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 import { LOGO } from "../constants";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import userContext from "./utils/UserContext";
 import { useSelector } from "react-redux";
-import store from "./utils/Store";
 
 const Title = () => {
   return (
@@ -14,8 +13,12 @@ const Title = () => {
 };
 
 const Header = () => {
+  const [isloggedIn,setIsloggedIn] = useState(false)
   const { user } = useContext(userContext);
   const cartItem = useSelector(store => store.cart.items)
+  const userDetails = useSelector(store => store.user.items)
+
+  console.log("userDetails :",userDetails);
   
   return (
     <div className="flex justify-between bg-gray-100 shadow-lg">
@@ -38,12 +41,19 @@ const Header = () => {
             <Link to="/Instamart">Instamart</Link>
           </li>
           <li className="px-2">
-            <Link to="/cart">cart - {cartItem.length}items</Link>
+            <Link to="/cart">cart - {cartItem.length}</Link>
+          </li>
+          <li className="px-2">
+            <Link to="/profile">profile</Link>
           </li>
         </ul>
       </div>
+      
+      <div className="mt-5">
+        <span className="ml-96 my-5 text-lg font-bold">{userDetails && `Welcome ${userDetails.name}`}</span>
+      </div>
       <div>
-        <span className="m-4">Hi,{user.name}</span>
+         <button className="bg-orange-600 my-5 shadow-lg rounded-md w-16 mr-36 p-2">{userDetails ? 'Logout' : <Link to="/login">Login</Link>}</button>
       </div>
     </div>
   );

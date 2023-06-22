@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { IMG_CDN_URL } from "../constants";
-import { addItem } from "./utils/cartSlice";
+import { addItem } from "./utils/Slices/cartSlice";
 
 
 const FoodMenu = ({ name, category, description, price, imageId }) => {

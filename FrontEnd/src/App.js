@@ -11,8 +11,11 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import Shimmer from "./components/shimmer";
 import userContext from "./components/utils/UserContext";
 import { Provider } from "react-redux";
-import store from "./components/utils/Store";
+import store from "./components/utils/Store/Store";
 import Cart from "./components/Cart";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import Profile from "./components/Profile";
 // import "./index.css"
 
 const Instamart = lazy(() => import("./components/Instamart"));
@@ -20,10 +23,7 @@ const Instamart = lazy(() => import("./components/Instamart"));
 // CREATING FOOD APP
 
 const AppLayout = () => {
-  const [user, setUser] = useState({
-    name: "priyesh",
-    email: "priyesh@gmail.com",
-  });
+  const [user, setUser] = useState('');
   return (
     <Provider store={store}>
       <userContext.Provider value={{ user: user,setUser:setUser }}>
@@ -69,6 +69,18 @@ const appRouter = createBrowserRouter([
         path: "/cart",
         element: <Cart />,
       },
+      {
+        path: "/profile",
+        element: <Profile />
+      },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path : "/signup",
+        element :<SignUp/>
+      }
     ],
   },
 ]);

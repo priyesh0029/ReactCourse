@@ -4,7 +4,7 @@ import FoodMenu from "./FoodMenu";
 import ResturantDetails from "./RestuarantDetails";
 import useResturant from "./utils/useResturant";
 import { useDispatch } from "react-redux";
-import { addItem } from "./utils/cartSlice";
+import { addItem } from "./utils/Slices/cartSlice";
 
 const RestaurantMenu = () => {
   const params = useParams();
